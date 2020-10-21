@@ -1,0 +1,12 @@
+.about-me {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 27px;
+}
+
+.about-me-title {
+  color: #e65f54;
+  font-size: 1.2rem;
+  margin-bottom: 13px;
+}
