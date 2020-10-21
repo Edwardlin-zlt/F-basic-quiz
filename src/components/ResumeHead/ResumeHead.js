@@ -6,7 +6,7 @@ const ResumeHead = (user) => {
             <h1 class="say-hello">HELLO,</h1>
             <p>
                 MY NAME IS <span class="user-name">${
-                  user.name || "USERNAME"
+                  user ? user.name : "USERNAME"
                 }</span> AND THIS IS MY RESUME/CV
             </p>
           </section>`;
