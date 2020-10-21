@@ -1,6 +1,6 @@
-import ResumeHead from "./component/ResumeHead/ResumeHead";
-import AboutMe from "./component/AboutMe/AboutMe";
-import Educations from "./component/Education/Education";
+import ResumeHead from "./components/ResumeHead/ResumeHead";
+import AboutMe from "./components/AboutMe/AboutMe";
+import Educations from "./components/Education/Education";
 
 const renderMain = async () => {
   const main = document.querySelector(".main");
