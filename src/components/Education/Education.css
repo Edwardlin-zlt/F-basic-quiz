@@ -1,0 +1,11 @@
+.education {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.education-title {
+  color: #e65f54;
+  font-size: 1.2rem;
+  margin-bottom: 13px;
+}

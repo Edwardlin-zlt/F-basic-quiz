@@ -1,0 +1,11 @@
+.education-item {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.edu-item-content {
+  width: 80%;
+  background: #f8f9fa;
+}

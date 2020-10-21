@@ -3,13 +3,13 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: -50px;
   margin-bottom: 27px;
 }
 
 .avatar {
   height: 100px;
   width: 100px;
+  margin-top: -50px;
   object-fit: cover;
   border-radius: 50%;
 }
