@@ -1,4 +1,4 @@
-import Resume from "./pages/Resume";
+import Resume from "./pages/Resume/Resume";
 
 const renderMain = async () => {
   const main = document.querySelector(".main");

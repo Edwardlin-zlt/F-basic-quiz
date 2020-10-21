@@ -1,8 +1,8 @@
-import UserApi from "../api/user/user";
-import ResumeHead from "../components/ResumeHead/ResumeHead";
-import AboutMe from "../components/AboutMe/AboutMe";
-import Educations from "../components/Education/Education";
-import EducationApi from "../api/education/education";
+import UserApi from "../../api/user/user";
+import EducationApi from "../../api/education/education";
+import ResumeHead from "../../components/ResumeHead/ResumeHead";
+import AboutMe from "../../components/AboutMe/AboutMe";
+import Educations from "../../components/Education/Education";
 
 class Resume {
   constructor() {
@@ -40,9 +40,12 @@ class Resume {
   render = async () => {
     await this.pageDidMount();
     const { user, educations } = this;
-    return `${ResumeHead(user)}
-                ${AboutMe(user)}
-                ${Educations(educations)}`;
+    return `
+      <div class="resume">
+        ${ResumeHead(user)}
+        ${AboutMe(user)}
+        ${Educations(educations)}
+      </div>`;
   };
 }
 

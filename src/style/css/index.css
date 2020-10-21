@@ -13,3 +13,15 @@ a {
   text-decoration: none;
   color: inherit;
 }
+
+body {
+  width: 100%;
+  font-size: 100%;
+}
+
+.main {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background: #e8e9e8;
+}
