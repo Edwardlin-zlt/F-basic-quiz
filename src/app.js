@@ -1,12 +1,9 @@
-import ResumeHead from "./components/ResumeHead/ResumeHead";
-import AboutMe from "./components/AboutMe/AboutMe";
-import Educations from "./components/Education/Education";
+import Resume from "./pages/Resume";
 
 const renderMain = async () => {
   const main = document.querySelector(".main");
-  main.insertAdjacentHTML("beforeend", await ResumeHead());
-  main.insertAdjacentHTML("beforeend", await AboutMe());
-  main.insertAdjacentHTML("beforeend", await Educations());
+  const resume = new Resume();
+  main.insertAdjacentHTML("beforeend", await resume.render());
 };
 
 renderMain();

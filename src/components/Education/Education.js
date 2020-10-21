@@ -1,4 +1,4 @@
-const Educations = async () => {
+const Educations = () => {
   return `
       <section class="education">
         <h1 class="education-title">EDUCATION</h1>
