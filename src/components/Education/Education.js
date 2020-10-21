@@ -1,9 +1,11 @@
-const Educations = () => {
+import EducationItem from "./EducationItem";
+
+const Educations = (educations) => {
   return `
       <section class="education">
         <h1 class="education-title">EDUCATION</h1>
         <ul class="education-container">
-            Education
+          ${educations && educations.map((edu) => EducationItem(edu))}
         </ul>
       </section>
     `;
