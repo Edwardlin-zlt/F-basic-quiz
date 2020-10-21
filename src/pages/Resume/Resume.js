@@ -2,7 +2,7 @@ import UserApi from "../../api/user/user";
 import EducationApi from "../../api/education/education";
 import ResumeHead from "../../components/ResumeHead/ResumeHead";
 import AboutMe from "../../components/AboutMe/AboutMe";
-import Educations from "../../components/Education/Education";
+import Educations from "../../components/Education/Educations";
 
 class Resume {
   constructor() {
