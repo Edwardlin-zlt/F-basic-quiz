@@ -5,7 +5,11 @@ const Educations = (educations) => {
       <section class="education">
         <h1 class="education-title">EDUCATION</h1>
         <ul class="education-container">
-          ${educations ? educations.map((edu) => EducationItem(edu)) : ""}
+          ${
+            educations
+              ? educations.map((edu) => EducationItem(edu)).join("\n")
+              : ""
+          }
         </ul>
       </section>
     `;
