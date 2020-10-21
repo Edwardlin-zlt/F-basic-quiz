@@ -29,7 +29,7 @@ class Resume {
 
   getUserId = () => {
     const curUrl = window.location.href;
-    return curUrl.split("/").pop();
+    return parseInt(curUrl.split("/").pop(), 10);
   };
 
   pageDidMount = async () => {
