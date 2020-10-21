@@ -7,17 +7,17 @@ const getUser = async () => {
   return UserApi.getUserById(userId);
 };
 
-const ResumeHead = () => {
-  const user = getUser();
+const ResumeHead = async () => {
+  const user = await getUser();
   return `<section class="resume-head">
             <img src=${avatar} alt="" class="avatar">
             <h1 class="say-hello">HELLO,</h1>
             <p>
                 MY NAME IS <span class="user-name">${
-                  user.name || ""
+                  user.name || "USERNAME"
                 }</span> AND THIS IS MY RESUME/CV
             </p>
-        </section>`;
+          </section>`;
 };
 
-export default ResumeHead();
+export default ResumeHead;
