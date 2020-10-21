@@ -22,4 +22,24 @@ describe("UserApi", () => {
       expect(responseData).toEqual(usersData);
     });
   });
+
+  describe("getUserById", () => {
+    it("should make a Get request to /users/{userId}", async () => {
+      axios.get.mockResolvedValue({});
+      const userId = 1;
+
+      await UserApi.getUserById(userId);
+
+      expect(axios.get).toHaveBeenCalledWith(`base.url.com/users/${userId}`);
+    });
+
+    it("should return user data in response body", async () => {
+      const userData = {};
+      axios.get.mockResolvedValue({ data: userData });
+
+      const responseData = await UserApi.getUserById(1);
+
+      expect(responseData).toEqual(userData);
+    });
+  });
 });
