@@ -1,3 +1,5 @@
+/*TODO GTB-知识点: - 不用新建index.css文件，写到index.scss文件里面就行了*/
+
 * {
   padding: 0;
   margin: 0;
@@ -13,6 +15,7 @@ a {
   text-decoration: none;
   color: inherit;
 }
+/*TODO GTB-知识点: - 这条TODO以上的代码都应该放到_reboot.scss文件里面去*/
 
 .main {
   width: 100%;

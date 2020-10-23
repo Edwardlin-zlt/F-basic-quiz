@@ -1,5 +1,5 @@
 import Resume from "./Resume";
-
+// TODO GTB-完成度: - 核心的render()方法没有测
 describe("Resume", () => {
   beforeAll(() => {
     // eslint-disable-next-line
@@ -15,6 +15,7 @@ describe("Resume", () => {
     window.location = location;
   });
 
+  // TODO GTB-知识点: - getUserId()只被内部function使用，不应该单独测它
   it("should get userId from current url", () => {
     const resume = new Resume();
 
